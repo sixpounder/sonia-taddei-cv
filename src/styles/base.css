@@ -1,0 +1,26 @@
+html {
+    @apply bg-white;
+    @apply dark:bg-gray-900;
+}
+
+body {
+    @apply subpixel-antialiased;
+    @apply text-gray-800 dark:text-gray-200;
+}
+
+a {
+    @apply text-indigo-600;
+    @apply dark:text-blue-300;
+}
+a:hover {
+    @apply underline text-indigo-500;
+}
+
+@media print {
+    a {
+        color: initial;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
