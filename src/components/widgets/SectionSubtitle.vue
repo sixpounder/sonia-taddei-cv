@@ -12,7 +12,8 @@ export default defineComponent({
 });
 </script>
 
-<style lang="stylus" scoped>
-  h4
-    @apply text-xl font-bold
+<style lang="css" scoped>
+  h4 {
+    @apply font-bold;
+  }
 </style>

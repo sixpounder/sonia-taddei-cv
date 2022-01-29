@@ -14,6 +14,6 @@ export default defineComponent({
 
 <style lang="css" scoped>
   h3 {
-    @apply text-3xl pb-2 font-bold border-b border-slate-300 dark:border-gray-700;
+    @apply text-xl lg:text-2xl pb-2 font-bold border-b text-slate-500 dark:text-gray-400 border-slate-300 dark:border-gray-700;
   }
 </style>

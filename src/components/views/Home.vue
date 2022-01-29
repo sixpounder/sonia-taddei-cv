@@ -9,6 +9,9 @@ import Skills from '../partials/Skills.vue'
 import Education from '../partials/Education.vue'
 import Volunteering from '../partials/Volunteering.vue'
 import Footer from '../widgets/Footer.vue'
+import Languages from '../partials/Languages.vue'
+import SoftSkills from '../partials/SoftSkills.vue'
+import Publications from '../partials/Publications.vue'
 
 </script>
 
@@ -20,6 +23,7 @@ import Footer from '../widgets/Footer.vue'
     <MainLayout>
       <template v-slot:left>
         <Education />
+        <Publications />
         <ProfessionalExperience />
         <Skills />
         <Volunteering />
@@ -27,6 +31,8 @@ import Footer from '../widgets/Footer.vue'
       <template v-slot:right>
         <PersonalInfo />
         <Contacts />
+        <SoftSkills />
+        <Languages />
       </template>
     </MainLayout>
     <Footer />

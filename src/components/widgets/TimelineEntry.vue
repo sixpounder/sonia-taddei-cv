@@ -39,7 +39,7 @@ const props = defineProps({
 }
 
 .entry h3 {
-  @apply text-2xl font-bold my-2;
+  @apply text-xl lg:text-2xl font-bold my-2;
 }
 
 .entry h4 {
