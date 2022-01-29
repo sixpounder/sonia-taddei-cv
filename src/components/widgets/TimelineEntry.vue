@@ -50,9 +50,23 @@ const props = defineProps({
     @apply hidden absolute lg:block text-right font-extralight uppercase text-sm;
     left: -240px;
     width: 150px;
-    word-wrap: break-word;
+    word-wrap: initial;
     top: calc(50% - 1rem);
     content: attr(data-date);
+}
+
+@screen lg {
+  .entry::before {
+    left: -200px;
+    width: 100px;
+  }
+}
+
+@screen xl {
+  .entry::before {
+    left: -240px;
+    width: 140px;
+  }
 }
 
 .entry::after {

@@ -8,6 +8,7 @@ import ProfessionalExperience from '@/components/partials/ProfessionalExperience
 import Skills from '../partials/Skills.vue'
 import Education from '../partials/Education.vue'
 import Volunteering from '../partials/Volunteering.vue'
+import Footer from '../widgets/Footer.vue'
 
 </script>
 
@@ -28,5 +29,6 @@ import Volunteering from '../partials/Volunteering.vue'
         <Contacts />
       </template>
     </MainLayout>
+    <Footer />
   </main>
 </template>
