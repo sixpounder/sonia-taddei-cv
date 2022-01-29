@@ -1,28 +1,31 @@
 <template>
-    <li :data-date="modelValue.date" class="entry">
-        <small>{{ modelValue.date }}</small>
+    <li :data-date="modelValue.date ?? ''" class="entry">
+        <small v-if="modelValue.date">{{ modelValue.date }}</small>
         <h3>{{ modelValue.title }}</h3>
         <h4>{{ modelValue.subtitle }}</h4>
         <p>{{ modelValue.body }}</p>
         
         <ul v-if="modelValue.points.length">
-          <li v-for="point in modelValue.points" :key="point">
-            {{ point }}
+          <li v-for="point in modelValue.points">
+            <i class="underline mr-2" v-if="point.title">{{ point.title }}</i>
+            <span>{{ point.body }}</span>
           </li>
         </ul>
     </li>
 </template>
 
 <script lang="ts" setup>
-import { PropType } from "vue"
+import { isString } from "lodash-es";
+import { computed, PropType } from "vue"
 import { TimelineEvent } from "../../lib/timeline";
 
-defineProps({
+const props = defineProps({
   modelValue: {
     type: Object as PropType<TimelineEvent>,
     required: true,
   }
 });
+
 </script>
 
 <style lang="css" scoped>
@@ -46,7 +49,7 @@ defineProps({
 .entry::before {
     @apply hidden absolute lg:block text-right font-extralight uppercase text-sm;
     left: -240px;
-    max-width: 150px;
+    width: 150px;
     word-wrap: break-word;
     top: calc(50% - 1rem);
     content: attr(data-date);

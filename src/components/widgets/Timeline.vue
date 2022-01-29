@@ -33,7 +33,7 @@ defineProps({
 }
 
 .timeline-wrap h2 {
-    @apply text-4xl lg:text-5xl font-bold block pb-8;
+    @apply text-center lg:text-left text-4xl lg:text-5xl font-bold block pb-8;
     @apply border-b border-b-gray-500;
     border-bottom-style: dashed;
 }

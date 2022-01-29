@@ -1,11 +1,11 @@
 import { defaults } from "lodash-es"
 
 export interface TimelineEvent {
-    date: string | number,
+    date: string | number | undefined,
     title: string,
     subtitle: string,
     body: string,
-    points: string[],
+    points: { title: string | null, body: string }[],
     createdAt: Date
 }
 

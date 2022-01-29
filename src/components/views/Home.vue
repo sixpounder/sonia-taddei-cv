@@ -5,6 +5,9 @@ import PersonalInfo from '@/components/partials/PersonalInfo.vue'
 import Contacts from '@/components/partials/Contacts.vue'
 import ProfessionalSummary from '@/components/partials/ProfessionalSummary.vue'
 import ProfessionalExperience from '@/components/partials/ProfessionalExperience.vue'
+import Skills from '../partials/Skills.vue'
+import Education from '../partials/Education.vue'
+import Volunteering from '../partials/Volunteering.vue'
 
 </script>
 
@@ -15,7 +18,10 @@ import ProfessionalExperience from '@/components/partials/ProfessionalExperience
 
     <MainLayout>
       <template v-slot:left>
+        <Education />
         <ProfessionalExperience />
+        <Skills />
+        <Volunteering />
       </template>
       <template v-slot:right>
         <PersonalInfo />
