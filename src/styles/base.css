@@ -12,6 +12,11 @@ a {
     @apply text-indigo-600;
     @apply dark:text-blue-300;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Saira';
+}
+
 a:hover {
     @apply underline text-indigo-500;
 }

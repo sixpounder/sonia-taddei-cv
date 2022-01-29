@@ -45,11 +45,11 @@ const props = defineProps({
 }
 
 .entry h4 {
-  @apply text-xl font-light my-2;
+  @apply text-xl my-2;
 }
 
 .entry::before {
-    @apply hidden absolute lg:block text-right font-extralight uppercase text-sm;
+    @apply hidden absolute lg:block text-right font-light uppercase text-sm;
     left: -240px;
     width: 150px;
     word-wrap: initial;

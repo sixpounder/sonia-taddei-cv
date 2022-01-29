@@ -6,7 +6,7 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Inter']
+      'sans': ['Chivo']
     },
     extend: {},
   },
