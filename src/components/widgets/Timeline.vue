@@ -38,6 +38,13 @@ defineProps({
     border-bottom-style: dashed;
     white-space: normal;
 }
+
+@media print {
+    .timeline-wrap {
+        page-break-inside: avoid;
+        page-break-after: always;
+    }
+}
 </style>
 
 <style lang="stylus">

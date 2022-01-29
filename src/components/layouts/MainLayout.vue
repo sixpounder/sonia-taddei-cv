@@ -1,5 +1,5 @@
 <template>
-  <div role="presentation" class="layout-wrap flex flex-col-reverse lg:flex-row">
+  <div role="presentation" class="layout-wrap">
     <div class="left-wrapper">
       <slot name="left" />
     </div>
@@ -11,13 +11,15 @@
 
 <style lang="css" scoped>
   .layout-wrap {
-    @apply relative mb-8;
+    @apply relative mb-8 flex flex-col-reverse lg:flex-row;
     @apply lg:px-32;
   }
 
   .layout-wrap .left-wrapper {
       @apply relative flex-auto text-justify break-words space-y-8;
       @apply leading-6;
+      @apply lg:mr-8;
+      @apply mt-8 lg:mt-0;
   }
 
   .layout-wrap .right-wrapper {
@@ -25,11 +27,17 @@
       min-width: 25%;
       border-radius: .5rem;
   }
-</style>
 
-<style scoped>
-    .left-wrapper {
-        @apply lg:mr-8;
-        @apply mt-8 lg:mt-0;
+  @media print {
+    .layout-wrap .left-wrapper {
+      page-break-before: always;
+      page-break-inside: auto;
+      page-break-after: always;
     }
+
+    .layout-wrap .right-wrapper {
+      page-break-before: always;
+      page-break-inside: auto;
+    }
+  }
 </style>
