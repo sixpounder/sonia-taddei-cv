@@ -23,7 +23,7 @@ a:hover {
 
 @media print {
     a {
-        color: initial;
+        color: unset;
     }
     a:hover {
         text-decoration: none;

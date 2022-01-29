@@ -11,4 +11,10 @@
 footer {
     @apply block text-center my-4 text-sm text-gray-500 dark:text-slate-400;
 }
+
+@media print {
+    footer {
+        @apply hidden;
+    }
+}
 </style>
