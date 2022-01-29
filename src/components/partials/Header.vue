@@ -11,7 +11,7 @@
 <style scoped>
 header {
     @apply text-6xl p-16;
-    @apply flex flex-row flex-wrap lg:flex-nowrap justify-center items-center lg:space-x-14;
+    @apply flex flex-col lg:flex-row lg:flex-nowrap justify-center items-center lg:space-x-14;
 }
 header img {
     @apply mb-4 lg:mb-0 rounded-full border-2 border-slate-900 shadow-gray-400 dark:border-slate-500 dark:shadow-slate-400;
