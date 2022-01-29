@@ -2,7 +2,7 @@
     <div class="timeline-wrap">
         <h2 v-if="title">{{ title }}</h2>
         <ul class="timeline">
-            <TimelineEntry v-for="event in events" :key="event.createdAt" :modelValue="event"/>
+            <TimelineEntry v-for="event in events" :key="event.createdAt.toString()" :modelValue="event"/>
         </ul>
     </div>
 </template>
@@ -10,7 +10,7 @@
 <script lang="ts" setup>
 import { PropType } from "vue"
 import { TimelineEvent } from "../../lib/timeline";
-import TimelineEntry from '@/components/widgets/TimelineEntry.vue';
+import TimelineEntry from './TimelineEntry.vue';
 
 defineProps({
     title: {
@@ -47,8 +47,9 @@ defineProps({
 }
 </style>
 
-<style lang="stylus">
-.timeline .entry:not(:last-child)
+<style lang="css">
+.timeline .entry:not(:last-child) {
     @apply border-b border-b-gray-500;
-    border-bottom-style dashed
+    border-bottom-style: dashed;
+}
 </style>

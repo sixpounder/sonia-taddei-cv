@@ -19,6 +19,6 @@
 </template>
 
 <script lang="ts" setup>
-import SectionTitle from "@/components/widgets/SectionTitle.vue";
-import SectionSubtitle from "@/components/widgets/SectionSubtitle.vue";
+import SectionTitle from "../widgets/SectionTitle.vue";
+import SectionSubtitle from "../widgets/SectionSubtitle.vue";
 </script>

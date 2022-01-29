@@ -20,9 +20,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import SectionTitle from "@/components/widgets/SectionTitle.vue";
-import SectionSubtitle from "@/components/widgets/SectionSubtitle.vue";
-import Email from "@/components/widgets/Email.vue";
+import SectionTitle from "../widgets/SectionTitle.vue";
+import SectionSubtitle from "../widgets/SectionSubtitle.vue";
+import Email from "../widgets/Email.vue";
 
 export default defineComponent({
   components: {
