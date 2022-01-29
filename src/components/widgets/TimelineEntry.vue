@@ -11,6 +11,8 @@
             <span>{{ point.body }}</span>
           </li>
         </ul>
+
+        <slot></slot>
     </li>
 </template>
 

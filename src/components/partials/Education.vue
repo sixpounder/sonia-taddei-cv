@@ -10,14 +10,9 @@ import { makeEvents, TimelineEvent } from '../../lib/timeline';
 const events = ref<TimelineEvent[]>(
     makeEvents([
         {
-            date: 'Dec. 2007 - Oct. 2011',
-            title: 'Master Degree in Aerospace Engineering, Aerodynamics',
-            subtitle: 'Università di Pisa (IT)',
-        },
-        {
-            date: 'Sept. 2012 - Aug. 2016',
-            title: 'PhD in Experimental Aerodynamics',
-            subtitle: 'University of Southampton (UK)',
+            date: 'Oct. 2019',
+            title: 'Management System Internal Auditor Certificate (ISO 9001)',
+            subtitle: 'AENOR'
         },
         {
             date: 'May 2017',
@@ -25,9 +20,14 @@ const events = ref<TimelineEvent[]>(
             subtitle: 'Chiarini e Associati'
         },
         {
-            date: 'Oct. 2019',
-            title: 'Management System Internal Auditor Certificate (ISO 9001)',
-            subtitle: 'AENOR'
+            date: 'Sept. 2012 - Aug. 2016',
+            title: 'PhD in Experimental Aerodynamics',
+            subtitle: 'University of Southampton (UK)',
+        },
+        {
+            date: 'Dec. 2007 - Oct. 2011',
+            title: 'Master Degree in Aerospace Engineering, Aerodynamics',
+            subtitle: 'Università di Pisa (IT)',
         },
     ])
 )
