@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import Timeline from '@/components/widgets/Timeline.vue'
+import Timeline from '../widgets/Timeline.vue'
 import { makeEvents, TimelineEvent } from '../../lib/timeline';
 
 const events = ref<TimelineEvent[]>(

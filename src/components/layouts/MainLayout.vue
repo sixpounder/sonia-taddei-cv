@@ -1,13 +1,22 @@
 <template>
   <div role="presentation" class="layout-wrap">
     <div class="left-wrapper">
-      <slot name="left" />
+      <slot name="left"></slot>
     </div>
     <div class="right-wrapper break-words bg-slate-100 dark:bg-gray-800">
-      <slot name="right" />
+      <slot name="right"></slot>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'MainLayout'
+})
+</script>
 
 <style lang="css" scoped>
   .layout-wrap {
