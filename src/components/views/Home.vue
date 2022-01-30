@@ -1,7 +1,7 @@
 <template>
   <main class="md:container mx-4 md:mx-auto">
     <Header />
-    <ProfessionalSummary class="mb-10" />
+    <ProfessionalSummary class="mb-16" />
 
     <MainLayout>
       <template v-slot:left>

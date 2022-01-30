@@ -1,6 +1,6 @@
 <template>
-  <section id="soft-skills">
-    <SectionTitle>Soft Skills</SectionTitle>
+  <section aria-labelledby="soft-skill-title" id="soft-skills">
+    <SectionTitle id="soft-skill-title">Soft Skills</SectionTitle>
     <div class="mt-4 space-y-4">
       <Skill :rating="5" dot-color="#FF3562">Problem solving</Skill>
       <Skill :rating="5" dot-color="#FF3562">Creativity</Skill>

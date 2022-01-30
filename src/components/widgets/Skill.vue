@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col" role="presentation">
     <div class="skill-content">
       <slot></slot>
     </div>

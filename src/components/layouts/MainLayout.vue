@@ -20,7 +20,7 @@ export default defineComponent({
 
 <style lang="css" scoped>
   .layout-wrap {
-    @apply relative mb-8 flex flex-col-reverse lg:flex-row;
+    @apply relative mb-8 flex flex-col lg:flex-row;
     @apply lg:px-32;
   }
 
@@ -28,11 +28,11 @@ export default defineComponent({
       @apply relative flex-auto text-justify break-words space-y-8;
       @apply leading-6;
       @apply lg:mr-8;
-      @apply mt-8 lg:mt-0;
   }
 
   .layout-wrap .right-wrapper {
-      @apply flex-1 flex-shrink p-6 space-y-8;
+      @apply flex-1 flex-shrink p-6 space-y-8 overflow-hidden;
+      @apply mt-8 lg:mt-0;
       min-width: 25%;
       border-radius: .5rem;
   }

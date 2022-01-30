@@ -1,10 +1,10 @@
 <template>
-    <div class="timeline-wrap">
+    <section :aria-label="title" class="timeline-wrap">
         <h2 v-if="title">{{ title }}</h2>
         <ul class="timeline">
             <TimelineEntry v-for="event in events" :key="event.createdAt.toString()" :modelValue="event"/>
         </ul>
-    </div>
+    </section>
 </template>
 
 <script lang="ts" setup>
