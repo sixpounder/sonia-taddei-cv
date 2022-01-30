@@ -6,13 +6,14 @@ export interface TimelineEvent {
     subtitle: string,
     body: string,
     points: { title: string | null, body: string }[],
+    link: { label: string, href: string } | null,
     createdAt: Date
 }
 
 export const makeEvent = (data: Partial<TimelineEvent>): TimelineEvent => {
     return defaults(
         data,
-        { date: 0, title: "", subtitle: "", body: "", points: [], createdAt: new Date() }
+        { date: 0, title: "", subtitle: "", body: "", points: [], link: null, createdAt: new Date() }
     );
 }
 

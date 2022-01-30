@@ -12,6 +12,7 @@
           </li>
         </ul>
 
+        <a v-if="modelValue.link" target="noopener" :href="modelValue.link.href">{{ modelValue.link.label }}</a>
         <slot></slot>
     </li>
 </template>
