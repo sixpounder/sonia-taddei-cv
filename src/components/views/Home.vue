@@ -15,6 +15,7 @@
         <PersonalInfo />
         <Contacts />
         <SoftSkills />
+        <Software />
         <Languages />
       </template>
     </MainLayout>
@@ -37,6 +38,7 @@ import Languages from '../partials/Languages.vue'
 import SoftSkills from '../partials/SoftSkills.vue'
 import Publications from '../partials/Publications.vue'
 import { defineComponent } from 'vue'
+import Software from '../partials/Software.vue'
 
 export default defineComponent({
   components: {
@@ -53,6 +55,7 @@ export default defineComponent({
     Languages,
     SoftSkills,
     Publications,
-  }
+    Software
+}
 })
 </script>
