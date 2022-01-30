@@ -1,16 +1,19 @@
 <template>
-  <section id="contacts" aria-label="Contacts">
-    <SectionTitle>Contact</SectionTitle>
-    <div class="space-y-4 mt-4">
-      <div>
+  <section id="contacts" aria-labelledby="contacts-section">
+    <SectionTitle id="contacts-section">Contacts</SectionTitle>
+    <div
+      role="list"
+      class="mt-4 flex flex-wrap flex-col justify-start space-y-4"
+    >
+      <div role="listitem">
         <SectionSubtitle> Phone </SectionSubtitle>
         <p>(+39) 3335266492</p>
       </div>
-      <div>
+      <div role="listitem">
         <SectionSubtitle> Email </SectionSubtitle>
-        <Email address="taddeisonia84@gmail.com" />
+        <Email address="taddeisonia84@gmail.com" class="lg:break-all" />
       </div>
-      <div>
+      <div role="listitem">
         <SectionSubtitle> Skype </SectionSubtitle>
         <p>sonia.taddei</p>
       </div>
