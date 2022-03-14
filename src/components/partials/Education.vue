@@ -10,6 +10,11 @@ import { makeEvents, TimelineEvent } from '../../lib/timeline';
 const events = ref<TimelineEvent[]>(
     makeEvents([
         {
+            date: 'Feb. 2022',
+            title: 'Six Sigma Green Belt',
+            subtitle: 'International Six Sigma Institute™'
+        },
+        {
             date: 'Oct. 2019',
             title: 'Management System Internal Auditor Certificate (ISO 9001)',
             subtitle: 'AENOR'
